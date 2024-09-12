@@ -886,7 +886,7 @@ section,
 }
 
 .featured-services .card-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 80%);
+  color:rgb(142, 138, 138);
   margin: 0;
 }
 
