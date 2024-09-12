@@ -10,7 +10,7 @@ async function sendMessage() {
     document.getElementById('user-input').value = "";
 
     try {
-        const API_URL = 'https://your-vercel-app.vercel.app/api/fulfillment'; // Replace this after deployment
+        const API_URL = 'https://jaldarpan.vercel.app/fulfillment'; // Replace this after deployment
         const response = await fetch(API_URL, {
             method: 'POST',
             headers: {
