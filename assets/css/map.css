@@ -25,6 +25,7 @@
 #map_search{
     display: flex;
     flex-direction: column;
+    justify-content:center;
 }
 /*Styling Map Controls*/
 .leaflet-control-zoom {
