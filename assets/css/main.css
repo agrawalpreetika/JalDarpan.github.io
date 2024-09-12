@@ -86,6 +86,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+.col-xl-6 col-lg-8 p{
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
 
 /* PHP Email Form Messages
 ------------------------------*/
