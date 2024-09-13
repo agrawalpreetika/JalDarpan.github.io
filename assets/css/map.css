@@ -11,9 +11,9 @@
     /* border-radius: 10px; */
 }
 #map_search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     height: 70vh;
 }
 
