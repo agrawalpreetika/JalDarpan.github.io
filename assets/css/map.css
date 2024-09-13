@@ -20,6 +20,8 @@
 #mapid {
     /* border: 3px solid rgb(10, 71, 111); */
     /* box-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
+    width: 100%; /* Ensures map takes the full width of the container */
+    height: 100%; /* Ensures map takes the full height of the container */
     box-shadow:
         #009688 0 0 0 5px, 
         #059c8e 0 0 0 1px, 
