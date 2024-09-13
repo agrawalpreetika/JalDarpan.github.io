@@ -19,14 +19,14 @@
 .map-container {
     display: flex;
     justify-content: center;
-    width: 75%; /* Ensures map container takes up available space */
+    width: 100%; /* Ensures map container takes up available space */
     height: 500px; /* Fixed height to prevent shrinking */
     z-index: 90;
     padding: 0 20px 20px 20px;
 }
 
 #mapid {
-    width: 100%; /* Ensures map takes the full width of the container */
+    width: 80%; /* Ensures map takes the full width of the container */
     height: 100%; /* Ensures map takes the full height of the container */
 }
 
