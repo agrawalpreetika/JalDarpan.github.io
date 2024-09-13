@@ -98,7 +98,7 @@ h6 {
   flex-wrap: wrap;
   text-align: center; /* Center text if needed */
   position: relative; /* Necessary for absolute positioning inside */
-  gap: 20px; /* Space between buttons */
+  gap: 30px; /* Space between buttons */
 }
 .link{
   display: flex;
