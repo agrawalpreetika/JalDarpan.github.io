@@ -198,8 +198,8 @@ h6 {
 ------------------------------*/
 
 .pulsating-play-btn {
-  width: 94px;
-  height: 94px;
+  width: 80px;
+  height: 80px;
   background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
   border-radius: 50%;
   display: block;
@@ -210,8 +210,8 @@ h6 {
 .pulsating-play-btn:before {
   content: "";
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   animation-delay: 0s;
   animation: pulsate-play-btn 2s;
   animation-direction: forwards;
