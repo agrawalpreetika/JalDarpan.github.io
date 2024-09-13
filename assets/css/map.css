@@ -1,19 +1,23 @@
 #map_search{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    height: 70vh; /* Take  screen height */
 }
 
 .map-container{
+    width: 75%; /* Ensures map container takes up available space */
+    height: 500px; /* Fixed height to prevent shrinking */
     display: flex;
     justify-content: center;
     padding: 50px;
     z-index:90;
+    padding: 0 20px 20px 20px;
     /* margin-bottom: 60px; */
 }
 
 #mapid {
-    height: 450px;
-    width: 75%;
     /* border: 3px solid rgb(10, 71, 111); */
     /* box-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
     box-shadow:
@@ -26,6 +30,21 @@
         #e5f9f7 0 0 0 21px, 
         #bfecf7 0 0 0 22px;
     /* border-radius: 10px; */
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space between map and search box */
+}
+
+#locationInput {
+    padding: 8px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px;
 }
 
 
