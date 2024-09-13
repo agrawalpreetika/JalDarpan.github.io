@@ -57,7 +57,7 @@ button {
     font-size: 16px; /* Increase font size */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
-}
+
 button:hover {
     background-color: #70c6ce; /* Darker shade on hover */
 }
