@@ -1,3 +1,7 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 #mapid {
     box-shadow:
         #009688 0 0 0 5px, 
