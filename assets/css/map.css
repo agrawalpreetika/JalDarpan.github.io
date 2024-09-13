@@ -17,10 +17,10 @@
 }
 
 .map-container {
-    width: 75%; /* Ensures map container takes up available space */
-    height: 500px; /* Fixed height to prevent shrinking */
     display: flex;
     justify-content: center;
+    width: 75%; /* Ensures map container takes up available space */
+    height: 500px; /* Fixed height to prevent shrinking */
     z-index: 90;
     padding: 0 20px 20px 20px;
 }
