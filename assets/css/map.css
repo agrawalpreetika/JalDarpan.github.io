@@ -1,3 +1,18 @@
+#map_search{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; /* Center horizontally */
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    z-index:90;
+    /* margin-bottom: 60px; */
+}
+
 #mapid {
     height: 450px;
     width: 75%;
@@ -14,20 +29,8 @@
         #bfecf7 0 0 0 22px;
     /* border-radius: 10px; */
 }
-.map-container{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    z-index:90;
-    /* margin-bottom: 60px; */
-}
 
-#map_search{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center; /* Center horizontally */
-}
+
 /*Styling Map Controls*/
 .leaflet-control-zoom {
     background-color: #000000;
