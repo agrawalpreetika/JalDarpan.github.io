@@ -6,6 +6,15 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* take to map button */
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.getElementById('takeToMapButton');
+  button.addEventListener('click', function () {
+    const mapSection = document.getElementById('services');
+    mapSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 (function() {
   "use strict";
 
