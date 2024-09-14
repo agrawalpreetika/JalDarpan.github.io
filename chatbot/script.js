@@ -8,13 +8,14 @@ async function sendMessage() {
 
     appendMessage(userInput, 'user-message');
     document.getElementById('user-input').value = "";
+    document.getElementById('user-input').focus(); // Focus back on input field
 
     // Disable the Send button while processing
     sendButton.disabled = true;
     appendMessage('Loading...', 'loading-message');
 
     try {
-        const response = await fetch('http://localhost:3000/fulfillment', {
+        const response = await fetch(`${window.location.origin}/fulfillment`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -29,8 +30,14 @@ async function sendMessage() {
         const data = await response.json();
         appendMessage(data.fulfillmentText, 'bot-message');
     } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-        appendMessage('Sorry, there was an error processing your request.', 'bot-message');
+        console.error('Fetch error:', error);
+
+        let errorMessage = 'Sorry, there was an error processing your request.';
+        if (error.message.includes('Failed to fetch')) {
+            errorMessage = 'Network error, please try again later.';
+        }
+
+        appendMessage(errorMessage, 'bot-message');
     } finally {
         // Re-enable the Send button and remove loading message
         sendButton.disabled = false;
@@ -57,4 +64,3 @@ document.getElementById('chatbot-toggle-btn').addEventListener('click', function
     const chatbotContainer = document.getElementById('chatbot-container');
     chatbotContainer.classList.toggle('hidden');  // Toggle the hidden class to show/hide the chatbot
 });
-
