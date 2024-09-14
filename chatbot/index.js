@@ -2,6 +2,7 @@ const express = require('express');
 const dialogflow = require('@google-cloud/dialogflow'); // Updated import
 const uuid = require('uuid');
 const cors = require('cors'); // Import the cors package
+const dotenv = require('dotenv');
 
 const app = express();
 const port = 3000;
@@ -10,8 +11,8 @@ app.use(express.json());
 app.use(cors()); // Enable CORS
 
 // Load service account key
-const sessionClient = new dialogflow.SessionsClient({ // Updated to use dialogflow.SessionsClient
-  keyFilename: 'waterwatch-nfle-5a1b8b457720.json'
+const sessionClient = new dialogflow.SessionsClient({
+  keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS
 });
 
 app.get('/', (req, res) => {
