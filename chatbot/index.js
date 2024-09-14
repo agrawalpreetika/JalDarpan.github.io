@@ -5,7 +5,7 @@ const cors = require('cors'); // Import the cors package
 const dotenv = require('dotenv');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors()); // Enable CORS
