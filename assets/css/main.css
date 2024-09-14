@@ -153,7 +153,7 @@ h6 {
 .take-button:hover, 
 .take-button:focus {
   color: #ffffff;
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 }
 
 .take-button:hover::before, 
