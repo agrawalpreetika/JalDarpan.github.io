@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "waterwatch-nfle",
+  "private_key_id": "5a1b8b4577207e2d9c309072202ab0d2af00fa11",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJThdJ6in+3Ar6\n9b5zvXJ1OxsVMQ7rSNoGhJ5LaaRtNoapIWRHuzItiCqM5NQ+4YV8WwgDIeO1bFDr\nHoTPWCiFyQ0bA9/lBTjmEtj32UKBfEF0H6KAAgpAzQnXlDPrbROOkDF3gioWWqTi\nQPVUmdNNBWCk3v9/bbAGIjNH2N1y7DlvtXLmCglt+PdoP8jE7ZYKMPImODTpqwyH\nr3vo14AkSsdBvSeu0VA4b6iTFHTYGsFkaPMQPhybZw4Z1GxSrgHOuDf+UjqMXzt4\n87zwgvhjHb2/Kp3b81YPplW4rjHZxztqbaDRu0soddIdI9MRJ7AtRRHY1IU0oMfd\nQwyR+Lq/AgMBAAECggEAQlIrgwsWReSJ64997RTLukq8S/mLMEIiroYPvsmxxddy\nexNIvgcy62RSnHOhZ4wWVdeJ5rpKEpH6gNPfro4dX6JS4oUexQ245rfr6pAWBKIC\n0HbBq0nAxgOnS/KEPnqDuHLSEUz9f7riWrZK/VHmlxf/9KGRbJKfLQ4kdfXBU6Rg\nvzZHUasGyypg7stufxZBeBicrfOCs49IQat2iMkkTMRSZ0ldmmTKIArDqanLYo4v\nZ4TQbkbtfwus/oZtjoGjwaEpwF0YjLKndIEiYzWlPjWt2b+YUUc8Y8WeNT+HBmJv\nCjiDwMewm137J+TDgSKi2PmmBQiMExTRFm0tXI770QKBgQD4kIswoiSUEyAPCRXN\nKqRhGoAxKZmT6301Y+rwNo6BhZ0pbE6S21v50/YkjYfQfdBPuQ2aXj7X2RB3KcuY\nJNt6HAEIGrN7dz+j1MLYa8I1I7CizaFEVZAbrLUII6PPniCgZksCFeGCQVkM1juj\n9BM/HeC6zZ0nuJKSP/cC2ApNUQKBgQDPU6Sow/RYQDKebrQdHWqC1dqoToQrU/YO\nwluhgOgVl8nBhsdPl70EDQvH/XIqc6IeFZzCbLokUGgsHrDYuIeKWEfrxevcu3Az\n97mbAo/liFg+NKUiegVH7TIHLIE5awGX5WQAzS4Awhbgrcr4hX4bbNPJENdlsZbG\n15APtIJDDwKBgQCck1jKqujFygJg1kVAd0MS1AG6dk0C6810i1tcM9Gy7zrf9BTO\n15Vpm0arIehSwl4tShGykvmdOGPx3IcecOE8W1WfCErVVHnnNsgCUmcE2FWVSFj0\n1b0wYaur09+FkkNVJvrK9oOWbJmux2jMT5ysHqMIqSr88XyK2fY8eWCL8QKBgHvA\nA1Kw1BIxD4W9skiGnGLH3yIC66UpEn+wxxzZYq4w0b5wAluhyLK4TsXqo9BvAN9Q\nKydp2pl+XQ+oqgpR6qVLGHLEyooQX2LFhMXfe6CYB4PpzH+NscVC8U+S4vcwxdyy\nkURhNApDz4AAfFxm4eTgynEDWm5a2BKL7HNTXUVFAoGBAMDbQByY0DhNx7TWN0gD\nUR12SF1pRG5T2xbFTRh/3wzddoeODLd/Hu2Y73+pC1eecR51ivTayKoNBHk71+mq\n32ENxy7HHYAhzBQGKyQxx0IVtswyTgIYZU8cD6FUlfp+32WkAVEspRoN9z6HIi9/\nvJGetvyQEiFRGfVy5PBHdslf\n-----END PRIVATE KEY-----\n",
+  "client_email": "jaldarpan@waterwatch-nfle.iam.gserviceaccount.com",
+  "client_id": "113938552687449019269",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jaldarpan%40waterwatch-nfle.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

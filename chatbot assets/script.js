@@ -1,17 +1,20 @@
-// Event listener for the Send button
 document.getElementById('send-btn').addEventListener('click', sendMessage);
 
-// Function to send the user's message to the server and handle the response
 async function sendMessage() {
     const userInput = document.getElementById('user-input').value;
+    const sendButton = document.getElementById('send-btn');
+    
     if (userInput.trim() === "") return;
 
     appendMessage(userInput, 'user-message');
     document.getElementById('user-input').value = "";
 
+    // Disable the Send button while processing
+    sendButton.disabled = true;
+    appendMessage('Loading...', 'loading-message');
+
     try {
-        const API_URL = 'https://jaldarpan.vercel.app/fulfillment'; // Replace this after deployment
-        const response = await fetch(API_URL, {
+        const response = await fetch('http://localhost:3000/fulfillment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -20,7 +23,7 @@ async function sendMessage() {
         });
 
         if (!response.ok) {
-            throw new Error(`Error: ${response.statusText}`);
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
         const data = await response.json();
@@ -28,10 +31,13 @@ async function sendMessage() {
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
         appendMessage('Sorry, there was an error processing your request.', 'bot-message');
+    } finally {
+        // Re-enable the Send button and remove loading message
+        sendButton.disabled = false;
+        removeLoadingMessage();
     }
 }
 
-// Function to append messages to the chat log
 function appendMessage(message, className) {
     const chatLog = document.getElementById('chat-log');
     const messageElement = document.createElement('div');
@@ -41,8 +47,14 @@ function appendMessage(message, className) {
     chatLog.scrollTop = chatLog.scrollHeight;
 }
 
+function removeLoadingMessage() {
+    const loadingMessages = document.querySelectorAll('.loading-message');
+    loadingMessages.forEach(msg => msg.remove());
+}
+
 // Event listener for the Chatbot toggle button
 document.getElementById('chatbot-toggle-btn').addEventListener('click', function() {
     const chatbotContainer = document.getElementById('chatbot-container');
     chatbotContainer.classList.toggle('hidden');  // Toggle the hidden class to show/hide the chatbot
 });
+

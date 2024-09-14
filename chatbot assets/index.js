@@ -4,21 +4,21 @@ const uuid = require('uuid');
 const cors = require('cors'); // Import the cors package
 
 const app = express();
-const port = process.env.PORT || 3000; // Use the port provided by Vercel
+const port = 3000;
 
 app.use(express.json());
 app.use(cors()); // Enable CORS
 
 // Load service account key
 const sessionClient = new dialogflow.SessionsClient({ // Updated to use dialogflow.SessionsClient
-  credentials: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS)
+  keyFilename: 'waterwatch-nfle-5a1b8b457720.json'
 });
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Dialogflow Chatbot Server!');
 });
 
-app.post('/api/fulfillment', async (req, res) => { // Note the `/api` path
+app.post('/fulfillment', async (req, res) => {
   const sessionId = uuid.v4();
   const sessionPath = sessionClient.projectAgentSessionPath('waterwatch-nfle', sessionId);
 
