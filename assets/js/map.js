@@ -13,7 +13,7 @@ var currentLocationMarker;  // Marker for the user's current location
         // DATASET FOR WATER LOGGING LEVELS
         var dataset = [
             { "name": "Connaught Place", "lat": 28.6316, "lon": 77.2195, "level": "high" },
-            { "name": "Karol Bagh", "lat": 28.6535, "lon": 77.1818, "level": "medium" },
+            { "name": "Karol Bagh", "lat": 28.6529982, "lon": 77.1890227, "level": "medium" },
             { "name": "Rohini", "lat": 28.7164, "lon": 77.1170, "level": "low" },
             { "name": "Rajouri Garden", "lat": 28.6489, "lon": 77.1225, "level": "high" },
             { "name": "Burari", "lat": 28.7543, "lon": 77.2016, "level": "medium" },
