@@ -23,7 +23,7 @@ var currentLocationMarker;  // Marker for the user's current location
             { "name": "ITO", "lat": 28.6284, "lon": 77.2412, "level": "medium" },
             { "name": "New Delhi Railway Station", "lat": 28.6424, "lon": 77.2196, "level": "low" },
             { "name": "Akshardham", "lat": 28.6127, "lon": 77.2773, "level": "low" },
-            { "name": "India Gate", "lat": 28.6129, "lon": 77.2295, "level": "low" },
+            { "name": "India Gate", "lat": 28.6129, "lon": 77.2295, "level": "high" },
             { "name": "Red Fort", "lat": 28.6562, "lon": 77.2410, "level": "high" },
             { "name": "Chandni Chowk", "lat": 28.6561, "lon": 77.2320, "level": "medium" },
             { "name": "Hauz Khas", "lat": 28.5497, "lon": 77.2078, "level": "high" },
